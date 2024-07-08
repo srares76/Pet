@@ -1,0 +1,26 @@
+
+----- xcbeautify -----
+Version: 2.4.0
+----------------------
+
+[!]  --- xcodebuild: Using the first of multiple matching destinations:
+{ platform:macOS, arch:arm64, id:00006000-001211110C23401E, name:My Mac }
+{ platform:macOS, arch:x86_64, id:00006000-001211110C23401E, name:My Mac }
+[Pet] Compiling GeneratedAssetSymbols.swift
+[Pet] Compiling PetApp.swift
+[x] /Users/raresstefan/Documents/personal/Pet/Pet/PetApp.swift:14:13: cannot find 'MarkedAppsView' in scope
+            MarkedAppsView()
+            ^~~~~~~~~~~~~~
+
+-----------------------------
+-- xcodebuild.nvim summary --
+-----------------------------
+
+Errors:
+  ✖ /Users/raresstefan/Documents/personal/Pet/Pet/PetApp.swift:14:13
+    cannot find 'MarkedAppsView' in scope
+                MarkedAppsView()
+                ^~~~~~~~~~~~~~
+
+  Build Failed
+

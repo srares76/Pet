@@ -1,0 +1,1 @@
+{"testsCount": 0, "failedTestsCount": 0, "tests": [], "buildWarnings": [], "testErrors": [], "buildErrors": [{"lineNumber": 14, "filename": "PetApp", "columnNumber": 13, "message": ["cannot find 'MarkedAppsView' in scope", "            MarkedAppsView()", "            ^~~~~~~~~~~~~~"], "filepath": "/Users/raresstefan/Documents/personal/Pet/Pet/PetApp.swift"}]}
