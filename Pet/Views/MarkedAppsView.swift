@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct MarkedAppsView: View {
+    @EnvironmentObject var markedAppsList: MarkedAppsList
     @State private var runningApps: [RunningApp] = []
+    
     var body: some View {
-        List(runningApps) { app in
+        List(markedAppsList.apps) { app in
             HStack {
                 Image(nsImage: app.icon)
                     .resizable()

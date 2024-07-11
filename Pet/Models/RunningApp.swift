@@ -8,7 +8,7 @@
 import Foundation
 import AppKit
 
-class RunningApp: Identifiable {
+class RunningApp: Identifiable, Equatable {
     var id = UUID()
     var name: String
     var icon: NSImage
@@ -17,6 +17,10 @@ class RunningApp: Identifiable {
         self.id = id
         self.name = name
         self.icon = icon
+    }
+    
+    static func ==(lhs: RunningApp, rhs: RunningApp) -> Bool {
+        return lhs.name == rhs.name
     }
     
     public static func getAllRunningApps() -> [RunningApp] {

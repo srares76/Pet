@@ -10,9 +10,14 @@ import Carbon
 
 class HotkeyManager {
     static let shared = HotkeyManager()
+    var markedAppsList: MarkedAppsList?
 
     private init() {
         registerHotkey()
+    }
+    
+    func setMarkedAppsList(_ list: MarkedAppsList) {
+        self.markedAppsList = list
     }
 
     private func registerHotkey() {
@@ -46,6 +51,19 @@ class HotkeyManager {
     private func handleHotkey() {
         if let frontmostApp = NSWorkspace.shared.frontmostApplication {
             print("Current frontmost app: \(frontmostApp.localizedName ?? "Unknown")")
+            let appName = frontmostApp.localizedName ?? "Unknown"
+            let appIcon = frontmostApp.icon ?? NSImage()
+            var appToAdd: RunningApp = RunningApp(name: appName, icon: appIcon)
+            
+            if (appName == "Pet") { return }
+            
+            DispatchQueue.main.async {
+                if let index = self.markedAppsList?.apps.firstIndex(of: appToAdd) {
+                    self.markedAppsList?.apps.remove(at: index)
+                } else {
+                    self.markedAppsList?.apps.append(appToAdd)
+                }
+            }
         } else {
             print("Could not determine the frontmost app")
         }

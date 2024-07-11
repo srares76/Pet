@@ -16,6 +16,7 @@
 		8759E9E92C317F3800E617FD /* PetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759E9E82C317F3800E617FD /* PetTests.swift */; };
 		8759E9F32C317F3800E617FD /* PetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759E9F22C317F3800E617FD /* PetUITests.swift */; };
 		8759E9F52C317F3800E617FD /* PetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759E9F42C317F3800E617FD /* PetUITestsLaunchTests.swift */; };
+		87C66B1D2C3FCA410099BD37 /* MarkedAppsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C66B1C2C3FCA410099BD37 /* MarkedAppsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8759E9EE2C317F3800E617FD /* PetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8759E9F22C317F3800E617FD /* PetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetUITests.swift; sourceTree = "<group>"; };
 		8759E9F42C317F3800E617FD /* PetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87C66B1C2C3FCA410099BD37 /* MarkedAppsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkedAppsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				871A32612C3C36F400C28195 /* RunningApp.swift */,
 				871A32632C3C3F3600C28195 /* HotkeyManager.swift */,
+				87C66B1C2C3FCA410099BD37 /* MarkedAppsList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				871A32642C3C3F3600C28195 /* HotkeyManager.swift in Sources */,
 				871A32622C3C36F400C28195 /* RunningApp.swift in Sources */,
 				8759E9D72C317F3700E617FD /* PetApp.swift in Sources */,
+				87C66B1D2C3FCA410099BD37 /* MarkedAppsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
