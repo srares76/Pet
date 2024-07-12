@@ -7,6 +7,7 @@
 
 import Foundation
 import AppKit
+import SwiftData
 
 class RunningApp: Identifiable, Equatable {
     var id = UUID()

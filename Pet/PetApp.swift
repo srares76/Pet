@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct PetApp: App {
-    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var markedAppsList = MarkedAppsList()
     
     var body: some Scene {
@@ -20,13 +20,5 @@ struct PetApp: App {
                 }
                 .environmentObject(markedAppsList)
         }
-    }
-}
-
-class AppDelegate: NSObject, NSApplicationDelegate {
-    @EnvironmentObject var markedAppsList: MarkedAppsList
-    
-    func applicationDidFinishLaunching(_ notification: Notification) {
-        HotkeyManager.shared
     }
 }
